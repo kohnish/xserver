@@ -79,4 +79,6 @@ CallCallbacks(CallbackListPtr *pcbl, void *call_data)
     _CallCallbacks(pcbl, call_data);
 }
 
+extern _X_EXPORT CallbackListPtr SelectionCallback;
+
 #endif                          /* CALLBACK_H */

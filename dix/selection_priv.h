@@ -58,7 +58,6 @@ typedef struct {
 
 extern Selection *CurrentSelections;
 
-extern CallbackListPtr SelectionCallback;
 extern CallbackListPtr SelectionFilterCallback;
 
 int dixLookupSelection(Selection **result,
