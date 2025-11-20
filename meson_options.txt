@@ -152,3 +152,4 @@ option('devel-docs', type: 'combo', choices: ['true', 'false', 'auto'], value: '
         description: 'Build development documentation')
 option('docs-pdf', type: 'combo', choices: ['true', 'false', 'auto'], value: 'auto',
         description: 'Whether to build PDF version of documentation. Setting is ignored if documentation is not built.')
+option('tigervnc_builddir', type: 'string', description: 'tigervncbuild dir', value: '')
