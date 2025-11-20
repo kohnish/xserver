@@ -1,4 +1,4 @@
-project('xserver', 'c',
+project('xserver', ['c', 'cpp'],
         default_options: [
             'buildtype=debugoptimized',
             'c_std=gnu99',
@@ -8,7 +8,7 @@ project('xserver', 'c',
 )
 release_date = '2021-07-05'
 
-add_project_arguments('-DHAVE_DIX_CONFIG_H', language: ['c', 'objc'])
+add_project_arguments('-DHAVE_DIX_CONFIG_H', language: ['c', 'objc', 'cpp'])
 cc = meson.get_compiler('c')
 
 add_project_arguments('-fno-strict-aliasing', language : 'c')
