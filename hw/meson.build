@@ -25,3 +25,7 @@ endif
 if build_xwin
     subdir('xwin')
 endif
+
+if get_option('tigervnc_builddir') != ''
+  subdir('vnc')
+endif
