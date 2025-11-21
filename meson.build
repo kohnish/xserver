@@ -1,4 +1,4 @@
-project('xserver', ['c', 'cpp'],
+project('xserver', 'c',
         default_options: [
             'buildtype=debugoptimized',
             'c_std=gnu99',
